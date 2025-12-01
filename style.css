@@ -155,6 +155,7 @@ nav a{
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 12.5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #offerings div h3{
@@ -170,3 +171,51 @@ nav a{
     line-height: 45px;
     display: list-item
 }
+
+#gallery{
+    margin: 40px;
+    border-bottom: 4px solid var(--champagne-gold);
+    padding-bottom: 50px;
+    
+}
+
+#gallery h2{
+    padding-bottom: 10px;
+}
+
+#gallery p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 45px;
+    color: var(--dark-charcoal);
+}
+
+#gallery img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+#gallery div{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#gallery div p{
+    padding: 20px;
+}
+
+#gallery button{
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    font-weight: 600;
+    padding: 20px;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Playfair Display';
+    border-radius: 15px;
+    border: 0 ;
+}
+
