@@ -58,3 +58,64 @@ table {
     --soft-white: #FAF9F6;
 }
 
+/* GLOBAL STYLES (mobile first/small) */
+body{
+    font-family: 'Playfair Display';
+    background-color: var(--linen);
+}
+
+h1{
+    font-size: 8rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+#heading{
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+#heading > div{
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+}
+
+#heading img{
+    margin: auto;
+}
+
+#heading h1{
+    font-weight: 550;
+    padding: 20px;
+}
+
+#heading p{
+    font-style: italic;
+    padding: 25px;
+}
+
+nav{
+    background-color: var(--champagne-gold);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    font-size: 3rem;
+    padding: 30px;
+    text-decoration: none;
+    color: var(--midnight-blue);
+    font-weight: bold;
+}
+
