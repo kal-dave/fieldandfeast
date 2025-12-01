@@ -74,7 +74,8 @@ h2{
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 #heading{
@@ -135,4 +136,37 @@ nav a{
 #welcome-message p{
     line-height: 45px;
     color: var(--dark-charcoal); 
+}
+
+#offerings{
+    margin: 40px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid var(--champagne-gold);
+}
+
+#offerings h2{
+    padding-bottom: 20px;
+}
+
+#offerings div{
+    padding: 20px;
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 12.5px;
+}
+
+#offerings div h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#offerings div p{
+    line-height: 45px;
+}
+
+#offerings div ul{
+    line-height: 45px;
+    display: list-item
 }
