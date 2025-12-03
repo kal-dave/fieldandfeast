@@ -62,19 +62,22 @@ table {
 body{
     font-family: 'Playfair Display';
     background-color: var(--soft-white);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
 }
 
 h1{
-    font-size: 8rem;
+    font-size: 4rem;
 }
 
 h2{
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: var(--midnight-blue);
 }
 
 h3{
-    font-size: 3rem;
+    font-size: 1.75rem;
     font-weight: bold;
 }
 
@@ -82,12 +85,13 @@ h3{
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     display: grid;
+    grid-template-columns: auto;
     grid-template-rows: auto auto;
 }
 
 #heading > div{
     margin: auto;
-    padding: 30px;
+    padding: 10px;
     display: grid;
     grid-template-rows: auto auto auto;
     text-align: center;
@@ -95,116 +99,191 @@ h3{
 
 #heading img{
     margin: auto;
+    width: 200px;
 }
 
 #heading h1{
     font-weight: 550;
-    padding: 20px;
+    padding: 15px;
 }
 
 #heading p{
     font-style: italic;
-    padding: 25px;
-    font-size: 2rem;
+    padding: 15px;
+    font-size: 1.25em;
 }
 
 nav{
     background-color: var(--champagne-gold);
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
 }
 
 nav a{
-    font-size: 3rem;
-    padding: 30px;
+    font-size: 1.5rem;
+    padding: 15px;
     text-decoration: none;
     color: var(--midnight-blue);
     font-weight: bold;
 }
 
 #welcome-message{
-    margin: 40px;
-    padding-bottom: 50px;
-    padding-top: 70px;
-    border-bottom: 4px solid var(--champagne-gold);
-}
-
-#welcome-message h2{
-    padding-bottom: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--champagne-gold);
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    gap: 15px 0;
 }
 
 #welcome-message p{
-    line-height: 45px;
+    line-height: 25px;
     color: var(--dark-charcoal); 
 }
 
 #offerings{
-    margin: 40px;
-    padding-bottom: 20px;
-    border-bottom: 4px solid var(--champagne-gold);
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--champagne-gold);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "heading"
+    "artisan"
+    "exclusive"
+    "monthly";
+    gap: 15px 0;
 }
 
 #offerings h2{
-    padding-bottom: 20px;
+    grid-area: heading;
+    padding-bottom: 10px;
 }
 
-#offerings div{
-    padding: 20px;
+#offerings .artisan{
+    grid-area: artisan;
+}
+
+#offerings .exclusive{
+    grid-area: exclusive;
+}
+
+#offerings .monthly{
+    grid-area: monthly;
+}
+
+#offerings > div{
+    padding: 15px;
     background-color: var(--olive-green);
     color: var(--soft-white);
-    margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 12.5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    /* display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto; */
 }
 
 #offerings div h3{
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 10px;
 }
 
 #offerings div p{
-    line-height: 45px;
+    line-height: 25px;
 }
 
 #offerings div ul{
-    line-height: 45px;
-    display: list-item
+    line-height: 25px;
+    display: list-item;
+    padding-left: 20px;
+}
+
+#offerings div li{
+    list-style-type: disc;
 }
 
 #gallery{
-    margin: 40px;
-    border-bottom: 4px solid var(--champagne-gold);
-    padding-bottom: 50px;
-    
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--champagne-gold);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    'heading'
+    'content'
+    'photo-1'
+    'photo-2'
+    'photo-3'
+    'photo-4'
+    'photo-5'
+    'button';
+    gap: 15px 0;
 }
 
-#gallery h2{
-    padding-bottom: 10px;
+#gallery-heading{
+    grid-area: heading;
+}
+
+#gallery-content{
+    grid-area: content;
+}
+
+#gallery-photo-1{
+    grid-area: photo-1;
+}
+
+#gallery-photo-2{
+    grid-area: photo-2;
+}
+
+#gallery-photo-3{
+    grid-area: photo-3;
+}
+
+#gallery-photo-4{
+    grid-area: photo-4;
+}
+
+#gallery-photo-5{
+    grid-area: photo-5;
+}
+
+#gallery-button{
+    grid-area: button;
 }
 
 #gallery p{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 45px;
+    padding-bottom: 5px;
+    line-height: 25px;
     color: var(--dark-charcoal);
 }
 
 #gallery img{
     width: 100%;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #gallery div{
-    margin-top: 30px;
-    margin-bottom: 30px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    display:flex;
+    flex-direction: column;
 }
 
 #gallery div p{
-    padding: 20px;
+    padding: 7.5px;
     font-style: italic;
     font-size: 0.9rem;
 }
@@ -213,25 +292,27 @@ nav a{
     background-color: var(--olive-green);
     color: var(--soft-white);
     font-weight: 600;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'Playfair Display';
-    border-radius: 15px;
+    border-radius: 5px;
     border: 0 ;
 }
 
 footer{
+    margin-top: 30px;
     background-color: var(--midnight-blue);
-    padding: 50px;
+    padding: 20px;
     color: var(--soft-white);
     text-align: center;
     display: grid;
     grid-template-rows: auto auto;
+    grid-template-columns: auto;
 }
 
 footer div{
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 footer #address-contact{
@@ -250,4 +331,67 @@ footer a{
     color: var(--champagne-gold);
     text-decoration: none;
     font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+
+    #offerings h3{
+        line-height: 40px;
+    }
+
+    #offerings{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto ;
+        grid-template-areas: 
+        "heading heading"
+        "artisan exclusive"
+        "monthly monthly";
+        gap: 15px 15px;
+    }
+
+    #gallery{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        'heading heading'
+        'content content'
+        'photo-1 photo-2'
+        'photo-4 photo-3'
+        'photo-5 .'
+        'button button';
+        gap: 15px 15px;
+    }
+}
+ 
+@media screen and (min-width: 900px) {
+    #gallery{
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto auto ;
+        grid-template-areas: 
+        'heading heading heading'
+        'content content content'
+        'photo-1 photo-2 photo-3'
+        'photo-4 photo-5 .'
+        'button button button';
+    }
+
+    #welcome-message, #offerings, #gallery{
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+
+    #gallery{
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        'heading heading heading heading heading'
+        'content content content content content'
+        'photo-1 photo-2 photo-3 photo-4 photo-5'
+        'button button button button button';
+    }
 }
