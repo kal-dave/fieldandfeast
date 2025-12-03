@@ -185,9 +185,6 @@ nav a{
     color: var(--soft-white);
     border-radius: 12.5px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-    /* display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto; */
 }
 
 #offerings div h3{
@@ -333,6 +330,8 @@ footer a{
     font-weight: bold;
 }
 
+/* MEDIA QUERY MEDIUM */
+
 @media screen and (min-width: 600px) {
 
     #offerings h3{
@@ -363,6 +362,8 @@ footer a{
     }
 }
  
+/* MEDIA QUERY LARGE */
+
 @media screen and (min-width: 900px) {
     #gallery{
         grid-template-columns: auto auto auto;
@@ -381,6 +382,8 @@ footer a{
         margin-right: auto;
     }
 }
+
+/* MEDIA QUERY X-LARGE */
 
 @media screen and (min-width: 1200px) {
 
